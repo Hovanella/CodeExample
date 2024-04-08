@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.AspNetCore.OData.EFCore" Version="5.0.0" />
+    <PackageReference Include="Bogus" Version="35.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>CustomerName.Portal.Equipment.UnitTests</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>CustomerName.Portal.Migrator</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>CustomerName.Portal.Migrator.Tasks</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Context\CustomerName.Portal.Framework.Context.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Entities\CustomerName.Portal.Framework.Entities.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.OData\CustomerName.Portal.Framework.OData.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Utils\CustomerName.Portal.Framework.Utils.csproj" />
+    <ProjectReference Include="..\..\Migrator\CustomerName.Portal.Migrator.Contract\CustomerName.Portal.Migrator.Contract.csproj" />
+    <ProjectReference Include="..\CustomerName.Portal.Equipment.DataAccess.Abstractions\CustomerName.Portal.Equipment.DataAccess.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

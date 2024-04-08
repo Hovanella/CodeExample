@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>CustomerName.Portal.Equipment.UnitTests</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>CustomerName.Portal.Equipment.Controllers</_Parameter1>
+    </AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>DynamicProxyGenAssembly2</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Csv\CustomerName.Portal.Csv.Contract\CustomerName.Portal.Csv.Contract.csproj" />
+    <ProjectReference Include="..\..\Excel\CustomerName.Portal.Excel.Contract\CustomerName.Portal.Excel.Contract.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Context\CustomerName.Portal.Framework.Context.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Exceptions\CustomerName.Portal.Framework.Exceptions.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.OData\CustomerName.Portal.Framework.OData.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.UseCases.Abstractions\CustomerName.Portal.Framework.UseCases.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Framework\CustomerName.Portal.Framework.Utils\CustomerName.Portal.Framework.Utils.csproj" />
+    <ProjectReference Include="..\..\Identity\CustomerName.Portal.Identity.Contract\CustomerName.Portal.Identity.Contract.csproj" />
+    <ProjectReference Include="..\CustomerName.Portal.Equipment.Contract\CustomerName.Portal.Equipment.Contract.csproj" />
+    <ProjectReference Include="..\CustomerName.Portal.Equipment.DataAccess.Abstractions\CustomerName.Portal.Equipment.DataAccess.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
